@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asma Barakzai | Computer Science Student & Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Asma Barakzai, a Computer Science student at IGNOU (ICCR scholar), learning web development, WordPress and UI/UX design.">
+  <meta name="theme-color" content="#050B12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- SVG icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-hash" viewBox="0 0 24 24"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3 21l1.65-4.85A9 9 0 1 1 8.1 19.5L3 21z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-.8.8a3.5 3.5 0 0 1-1.8-1.8l.8-.8-1-2L9 9.5z"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M22 3 2 11l6 2.2L10 20l3.2-3.7L18 20 22 3z"/><path d="M8 13.2 22 3"/></symbol>
+  </svg>
+
+  <!-- Invisible markers watched by IntersectionObserver (header state, scroll-to-top button) -->
+  <div class="scroll-sentinel" data-sentinel="header" style="top:24px" aria-hidden="true"></div>
+  <div class="scroll-sentinel" data-sentinel="top" style="top:600px" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Asma, back to top">ASMA<span>.</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO (animates on load with CSS only, so it is never hidden waiting for JavaScript) -->
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <span class="hero-orb orb-1" aria-hidden="true"></span>
+      <span class="hero-orb orb-2" aria-hidden="true"></span>
+
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow hero-anim"><span class="dot" aria-hidden="true"></span>Computer Science Student · Aspiring Web Developer</p>
+          <h1 id="hero-title" class="hero-anim" style="--d:1">
+            <span class="hero-hi">Hello, I'm</span>
+            <span class="hero-name">Asma <span class="grad">Barakzai</span></span>
+            <span class="hero-statement">Crafting <span class="grad">Digital Experiences</span> with Design &amp; Code.</span>
+          </h1>
+          <p class="lead hero-anim" style="--d:2">Computer Science student at Indira Gandhi National Open University, India, studying on an ICCR scholarship. I design and build clean, responsive websites, and I am currently strengthening my web development skills while working with WordPress and UI/UX design.</p>
+          <div class="btn-row hero-anim" style="--d:3">
+            <a href="#projects" class="btn btn-primary">Explore My Work <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+          </div>
+        </div>
+
+        <ul class="hero-cards hero-anim" style="--d:4">
+          <li class="hero-card"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg><small>Studying</small><strong>Computer Science</strong><span>IGNOU, India · ICCR Scholar</span></li>
+          <li class="hero-card"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><small>Learning</small><strong>Web Development</strong><span>HTML5 · CSS3 · JavaScript</span></li>
+          <li class="hero-card"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg><small>Exploring</small><strong>WordPress &amp; UI/UX</strong><span>Figma · Framer · Bootstrap</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow reveal">About Me</p>
+          <h2 id="about-title" class="section-title reveal" style="--d:1">A Curious Mind. A Creative Approach. A <span class="accent">Future in Tech.</span></h2>
+        </div>
+        <div class="about-text">
+          <p class="reveal" style="--d:1">I'm studying Computer Science at Indira Gandhi National Open University (IGNOU) in India, where I was accepted through the Indian Council for Cultural Relations (ICCR) scholarship program.</p>
+          <p class="reveal" style="--d:2">Alongside my degree, I'm learning Web Development at Net Link, studying WordPress through CTI, and building intermediate-level computer skills with ICDL. I also hold an English language certificate at B2 level.</p>
+          <p class="reveal" style="--d:3">I'm drawn to frontend development, UI/UX design, and responsive websites, and I'm developing my freelancing skills as I grow. I'm still learning, and I enjoy turning ideas into clean, usable interfaces.</p>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="highlight-grid">
+          <li class="card highlight reveal" style="--d:1"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span><span>Computer Science Student</span></li>
+          <li class="card highlight reveal" style="--d:2"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span><span>ICCR Scholarship</span></li>
+          <li class="card highlight reveal" style="--d:3"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><span>Web Development Learner</span></li>
+          <li class="card highlight reveal" style="--d:4"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg></span><span>UI/UX Design Enthusiast</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Education &amp; Scholarship</p>
+          <h2 id="education-title" class="section-title reveal" style="--d:1">My <span class="accent">Academic Journey</span></h2>
+        </header>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="marker" aria-hidden="true"></span>
+            <article class="card">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+              <div>
+                <h3>Indira Gandhi National Open University</h3>
+                <p class="meta">India · Computer Science</p>
+                <p>Accepted through the Indian Council for Cultural Relations (ICCR) scholarship program.</p>
+                <span class="badge badge-live">Currently studying</span>
+              </div>
+            </article>
+          </li>
+          <li class="timeline-item reveal" style="--d:1">
+            <span class="marker" aria-hidden="true"></span>
+            <article class="card">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+              <div>
+                <h3>Net Link</h3>
+                <p class="meta">Web Development training</p>
+                <span class="badge badge-live">Currently studying</span>
+              </div>
+            </article>
+          </li>
+          <li class="timeline-item reveal" style="--d:2">
+            <span class="marker" aria-hidden="true"></span>
+            <article class="card">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+              <div>
+                <h3>CTI</h3>
+                <p class="meta">WordPress training</p>
+                <span class="badge badge-live">Currently studying</span>
+              </div>
+            </article>
+          </li>
+          <li class="timeline-item reveal" style="--d:3">
+            <span class="marker" aria-hidden="true"></span>
+            <article class="card">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+              <div>
+                <h3>ICDL</h3>
+                <p class="meta">Computer skills</p>
+                <span class="badge">Intermediate-level learning</span>
+              </div>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Technical Skills</p>
+          <h2 id="skills-title" class="section-title reveal" style="--d:1">Tools I Use. <span class="accent">Skills I Build.</span></h2>
+        </header>
+
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3 class="group-title reveal">Frontend Development</h3>
+            <ul class="skill-grid">
+              <li class="card skill reveal" style="--d:1"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><h4>HTML5</h4><p>Structuring semantic, accessible page content.</p></li>
+              <li class="card skill reveal" style="--d:2"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-hash"/></svg></span><h4>CSS3</h4><p>Styling layouts and building responsive designs.</p></li>
+              <li class="card skill reveal" style="--d:3"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span><h4>Bootstrap</h4><p>Practicing responsive grid-based layouts.</p></li>
+              <li class="card skill reveal" style="--d:4"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span><h4>JavaScript</h4><p>Currently learning the fundamentals.</p><span class="badge badge-live">Currently learning</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="group-title reveal">UI/UX and Design</h3>
+            <ul class="skill-grid two">
+              <li class="card skill reveal" style="--d:1"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg></span><h4>Figma</h4><p>Designing interfaces and layout concepts.</p></li>
+              <li class="card skill reveal" style="--d:2"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg></span><h4>Framer</h4><p>Creating web designs and published pages.</p></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="group-title reveal">CMS and Computer Skills</h3>
+            <ul class="skill-grid two">
+              <li class="card skill reveal" style="--d:1"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span><h4>WordPress</h4><p>Studying CMS website building through CTI.</p></li>
+              <li class="card skill reveal" style="--d:2"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span><h4>ICDL</h4><p>Building computer skills at an intermediate level.</p></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="group-title reveal">Testing and Professional Development</h3>
+            <ul class="skill-grid two">
+              <li class="card skill reveal" style="--d:1"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><h4>Website Testing</h4><p>Checking layouts, links and functionality.</p></li>
+              <li class="card skill reveal" style="--d:2"><span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg></span><h4>Freelancing</h4><p>Developing skills for independent project work.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section alt" id="certifications" aria-labelledby="cert-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Training &amp; Certifications</p>
+          <h2 id="cert-title" class="section-title reveal" style="--d:1">Learning That <span class="accent">Moves Me Forward</span></h2>
+        </header>
+        <ul class="cert-grid">
+          <li class="card cert reveal" style="--d:1">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
+            <h3>English Language Certificate</h3>
+            <p>B2 level.</p>
+            <span class="badge badge-done">Certificate</span>
+          </li>
+          <li class="card cert reveal" style="--d:2">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+            <h3>Web Development Training</h3>
+            <p>Net Link.</p>
+            <span class="badge badge-live">In progress</span>
+          </li>
+          <li class="card cert reveal" style="--d:3">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+            <h3>WordPress Training</h3>
+            <p>CTI.</p>
+            <span class="badge badge-live">In progress</span>
+          </li>
+          <li class="card cert reveal" style="--d:4">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+            <h3>ICDL Computer Skills</h3>
+            <p>Intermediate-level learning.</p>
+            <span class="badge badge-live">In progress</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Selected Projects</p>
+          <h2 id="projects-title" class="section-title reveal" style="--d:1">Work I've <span class="accent">Designed &amp; Built</span></h2>
+        </header>
+
+        <div class="project-grid">
+          <article class="card project reveal" style="--d:1">
+            <div class="thumb">
+              <span class="img-placeholder" aria-hidden="true"><svg class="icon"><use href="#i-layout"/></svg><small>Replace with<br>assets/images/project-cafe.jpg</small></span>
+              <img src="assets/images/project-cafe.jpg" alt="Screenshot of the Coffee Shop website project" width="800" height="500" loading="lazy" data-fallback>
+              <span class="project-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow-ur"/></svg></span>
+            </div>
+            <div class="project-body">
+              <p class="category">Frontend Web Development</p>
+              <h3>Coffee Shop Website</h3>
+              <p>A coffee shop website project showcasing website layout, visual presentation, and frontend development practice.</p>
+              <ul class="tags"><li>Web Development</li></ul>
+              <a class="btn btn-secondary" href="https://shiwaquraishi90-dot.github.io/Caffee/" target="_blank" rel="noopener noreferrer">View Live Website <svg class="icon btn-arrow arrow-ur" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal" style="--d:2">
+            <div class="thumb">
+              <span class="img-placeholder" aria-hidden="true"><svg class="icon"><use href="#i-pen"/></svg><small>Replace with<br>assets/images/project-flower-shop.jpg</small></span>
+              <img src="assets/images/project-flower-shop.jpg" alt="Preview of the Flower Shop UI/UX design in Figma" width="800" height="500" loading="lazy" data-fallback>
+              <span class="project-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow-ur"/></svg></span>
+            </div>
+            <div class="project-body">
+              <p class="category">UI/UX Design</p>
+              <h3>Flower Shop UI/UX Design</h3>
+              <p>A flower shop design concept created in Figma, exploring visual presentation, interface layout, and a digital shopping experience.</p>
+              <ul class="tags"><li>Figma</li><li>UI/UX Design</li><li>Interface Design</li></ul>
+              <a class="btn btn-secondary" href="https://www.figma.com/design/s9Z6fpIVF8LHC11nYeEnpr/Flower-Shop-Project?node-id=0-1&amp;t=vEJ4bhMb8ixWkONq-1" target="_blank" rel="noopener noreferrer">View Figma Design <svg class="icon btn-arrow arrow-ur" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal" style="--d:3">
+            <div class="thumb">
+              <span class="img-placeholder" aria-hidden="true"><svg class="icon"><use href="#i-globe"/></svg><small>Replace with<br>assets/images/project-framer.jpg</small></span>
+              <img src="assets/images/project-framer.jpg" alt="Screenshot of the Framer website project" width="800" height="500" loading="lazy" data-fallback>
+              <span class="project-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow-ur"/></svg></span>
+            </div>
+            <div class="project-body">
+              <p class="category">Website Design</p>
+              <h3>Framer Website</h3>
+              <p>A website design project created with Framer, featuring a modern web interface and a dedicated contact page.</p>
+              <ul class="tags"><li>Framer</li><li>Web Design</li></ul>
+              <a class="btn btn-secondary" href="https://significant-keep-575932.framer.app/contact" target="_blank" rel="noopener noreferrer">View Live Project <svg class="icon btn-arrow arrow-ur" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section alt" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">My Learning Journey</p>
+          <h2 id="journey-title" class="section-title reveal" style="--d:1">Progress, Practice, <span class="accent">Possibility.</span></h2>
+        </header>
+        <ol class="roadmap">
+          <li class="road-item reveal"><span class="road-num" aria-hidden="true">01</span><div><h3>Strengthening HTML &amp; CSS</h3><p>Writing cleaner, more semantic markup and more polished styles.</p></div></li>
+          <li class="road-item reveal" style="--d:1"><span class="road-num" aria-hidden="true">02</span><div><h3>Responsive layouts with Bootstrap</h3><p>Practicing grids and components across screen sizes.</p></div></li>
+          <li class="road-item reveal" style="--d:2"><span class="road-num" aria-hidden="true">03</span><div><h3>JavaScript fundamentals</h3><p>Learning the core concepts behind interactive pages.</p></div></li>
+          <li class="road-item reveal" style="--d:3"><span class="road-num" aria-hidden="true">04</span><div><h3>UI/UX design with Figma</h3><p>Exploring interface layout and visual presentation.</p></div></li>
+          <li class="road-item reveal" style="--d:4"><span class="road-num" aria-hidden="true">05</span><div><h3>Web experiences with Framer</h3><p>Creating modern website designs and pages.</p></div></li>
+          <li class="road-item reveal" style="--d:5"><span class="road-num" aria-hidden="true">06</span><div><h3>Studying WordPress</h3><p>Learning CMS-based website building through CTI.</p></div></li>
+          <li class="road-item reveal" style="--d:6"><span class="road-num" aria-hidden="true">07</span><div><h3>Improving website testing</h3><p>Getting better at checking layouts, links and usability.</p></div></li>
+          <li class="road-item reveal" style="--d:7"><span class="road-num" aria-hidden="true">08</span><div><h3>Developing freelancing skills</h3><p>Preparing to work on independent projects.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 id="contact-title" class="section-title reveal" style="--d:1">Let's Create <span class="accent">Something Meaningful.</span></h2>
+          <p class="lead reveal" style="--d:2">I welcome opportunities for collaboration, freelance work and learning. Feel free to reach out by email, WhatsApp or Telegram, and I will reply as soon as I can.</p>
+          <ul class="social-list reveal" style="--d:3">
+            <li><a class="social" href="mailto:asmabarakzay1@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>asmabarakzay1@gmail.com</span></a></li>
+            <li><a class="social" href="tel:+93796094545"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>+93 796 094 545</span></a></li>
+            <li><a class="social" href="https://wa.me/93796094545" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span></a></li>
+            <li><a class="social" href="https://t.me/+93796094545" target="_blank" rel="noopener noreferrer" aria-label="Telegram (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg><span>Telegram</span></a></li>
+            <!-- EDIT: replace these placeholder links with your real profiles (also update the footer links) -->
+            <li><a class="social" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" data-placeholder><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a></li>
+            <li><a class="social" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" data-placeholder><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span></a></li>
+          </ul>
+        </div>
+
+        <form class="card contact-form reveal" style="--d:2" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+            <p class="error" id="subject-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <p class="error" id="message-error" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="form-note">This form checks your input but is not connected to an email service yet, so messages are not sent.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+
+      <div class="footer-top">
+        <!-- Column 1: brand -->
+        <div class="footer-brand reveal">
+          <a href="#home" class="wordmark" aria-label="Asma, back to top">ASMA<span>.</span></a>
+          <p class="footer-statement">Building thoughtful digital experiences through code, creativity, and continuous learning.</p>
+          <p class="footer-label">Computer Science · Web Development · UI/UX</p>
+        </div>
+
+        <!-- Column 2: explore -->
+        <nav class="footer-col reveal" style="--d:1" aria-labelledby="footer-explore">
+          <h2 class="footer-heading" id="footer-explore">Explore</h2>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#home"><span class="footer-link-text">Home</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#about"><span class="footer-link-text">About</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#education"><span class="footer-link-text">Education</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#skills"><span class="footer-link-text">Skills</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#projects"><span class="footer-link-text">Projects</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#contact"><span class="footer-link-text">Contact</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 3: areas of learning and development -->
+        <nav class="footer-col reveal" style="--d:2" aria-labelledby="footer-expertise">
+          <h2 class="footer-heading" id="footer-expertise">Expertise</h2>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#skills"><span class="footer-link-text">Frontend Development</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#skills"><span class="footer-link-text">UI/UX Design</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#certifications"><span class="footer-link-text">WordPress</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#projects"><span class="footer-link-text">Responsive Web Design</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="footer-link" href="#skills"><span class="footer-link-text">Website Testing</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 4: connect -->
+        <div class="footer-col footer-connect reveal" style="--d:3">
+          <h2 class="footer-heading">Let's Connect</h2>
+          <p class="footer-invite">Have an idea, a project, or an opportunity to discuss?</p>
+          <a class="footer-cta" href="#contact">Let's Talk <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <ul class="footer-socials">
+            <!-- EDIT: replace with your real profile URLs (same as the Contact section) -->
+            <li><a class="footer-social" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" data-placeholder><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a class="footer-social" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" data-placeholder><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Signature statement -->
+      <div class="footer-signature reveal">
+        <p class="signature">Thoughtfully designed. <span class="grad">Continuously evolving.</span></p>
+      </div>
+
+      <!-- Copyright row -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Asma Barakzai. All rights reserved.</p>
+        <p class="footer-tag">Designed with intention</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Scroll to top" type="button">
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </button>
+</body>
+</html>
